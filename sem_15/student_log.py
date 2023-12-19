@@ -14,6 +14,12 @@ def main():
 
     try:
         student = Student(args.name, args.csv_filename)
+        # для примера через Дэбаг
+        # student = Student("Алексей Петров", "subjects.csv")
+        # student.add_score("Математика", 5)
+        # student.add_test_result("Математика", 1005)
+        # print(student.average_test_score("Математика"))
+        # print(student.average_score())
 
     except StudentNameError:
         logging.error('Invalid student name format.')
